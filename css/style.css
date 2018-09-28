@@ -1,7 +1,55 @@
 body, html {
   height: 100%;
   margin: 0;
-  font-family: 'Montserrat'; }
+  font-family: 'Montserrat';
+  color: #383838; }
+
+.navigation {
+  text-align: right;
+  height: 70px; }
+  .navigation--color {
+    background-color: #383838; }
+  .navigation--about {
+    margin-bottom: 50px; }
+  .navigation__menu {
+    text-align: center;
+    display: none;
+    background-color: #FFF;
+    margin: 0;
+    height: 226px; }
+    .navigation__menu--color {
+      background-color: #383838; }
+  .navigation__border {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3%; }
+  .navigation__link {
+    text-decoration: none;
+    background-color: #FFF;
+    color: #383838;
+    line-height: 50px;
+    font-size: 36px;
+    font-weight: 900;
+    font-style: normal; }
+    .navigation__link--color {
+      background-color: #383838;
+      color: #FFF; }
+    .navigation__link:hover {
+      color: #d0021b; }
+  .navigation__hamburger {
+    display: block;
+    cursor: pointer;
+    color: #FFF;
+    margin: 0 26px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    width: 26px;
+    float: right; }
+
+#toggle {
+  display: none; }
+  #toggle:checked + .navigation__menu {
+    display: block; }
 
 .background-img {
   position: absolute;
@@ -26,50 +74,6 @@ body, html {
   background-size: cover;
   clip-path: polygon(135% 0, 100% 0, 100% 100%, -18% 100%);
   z-index: -1; }
-
-.navigation {
-  text-align: right;
-  height: 70px; }
-  .navigation--color {
-    background-color: #383838; }
-  .navigation__menu {
-    text-align: center;
-    display: none;
-    background-color: #FFF;
-    margin: 0;
-    height: 226px; }
-    .navigation__menu--color {
-      background-color: #383838; }
-  .navigation__border {
-    display: flex;
-    flex-direction: column;
-    padding-top: 3%; }
-  .navigation__link {
-    text-decoration: none;
-    background-color: #FFF;
-    color: #383838;
-    line-height: 50px;
-    font-size: 36px;
-    font-weight: bold; }
-    .navigation__link--color {
-      background-color: #383838;
-      color: #FFF; }
-    .navigation__link:hover {
-      color: #d0021b; }
-  .navigation__hamburger {
-    display: block;
-    cursor: pointer;
-    color: #FFF;
-    margin: 0 26px 0 0;
-    font-size: 26px;
-    line-height: 70px;
-    width: 26px;
-    float: right; }
-
-#toggle {
-  display: none; }
-  #toggle:checked + .navigation__menu {
-    display: block; }
 
 .image {
   display: inline-block;
@@ -115,7 +119,6 @@ body, html {
     .title__first-name--link {
       grid-column: 3 / 4;
       font-size: 40px;
-      font-family: 'Montserrat';
       text-decoration: none;
       color: #FFF; }
   .title__last-name {
@@ -149,6 +152,7 @@ body, html {
       align-items: center;
       opacity: 1;
       font-size: 32px;
+      font-style: normal;
       font-weight: 500;
       color: #FFF; }
 
@@ -191,32 +195,6 @@ body, html {
     height: 30%;
     text-decoration: none; }
 
-.profile {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  height: 669px;
-  margin-top: 20px;
-  margin: 0;
-  background-image: url("../images/about-me.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
-  .profile__text {
-    text-align: right;
-    width: 621px;
-    margin-right: 15%; }
-  .profile__title {
-    font-size: 48px;
-    font-weight: 900; }
-    .profile__title--color {
-      color: #d0021b; }
-  .profile__discription {
-    font-size: 40px;
-    font-weight: 900; }
-    .profile__discription--color {
-      color: #d0021b; }
-
 .personal-info {
   display: flex;
   justify-content: space-around;
@@ -240,6 +218,34 @@ body, html {
   .skills__icons {
     height: 55px;
     width: 55px; }
+
+.profile {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 669px;
+  margin-top: 20px;
+  margin: 0;
+  background-image: url("../images/about-me.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .profile__text {
+    text-align: right;
+    width: 621px;
+    margin-right: 10%; }
+  .profile__title {
+    font-size: 48px;
+    font-weight: 900;
+    font-style: italic;
+    margin-bottom: 15px; }
+    .profile__title--color {
+      color: #d0021b; }
+  .profile__discription {
+    font-size: 40px;
+    font-weight: 900; }
+    .profile__discription--color {
+      color: #d0021b; }
 
 .about-me {
   height: 445px;
