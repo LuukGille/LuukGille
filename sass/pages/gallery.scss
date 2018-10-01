@@ -16,15 +16,24 @@
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
+
+		&--millman {
+			background-image: url("../images/projects/fts-banner.jpg");
+		}
+
+		&--ftsf {
+			background-image: url("../images/projects/login_image.jpg");
+		}
 	}
 
 	&__title {
-		font-size: 25px;
-		color: #FFF
+		font-size: 22px;
+		color: $white
 	}
 
 	&__text {
-		color: #FFF;
+		color: $white;
+		font-style: italic;
 		margin-top: -1rem; 
 	}
 
@@ -36,7 +45,7 @@
 		line-height: 1px;
 		width: 100%;
 		height: 200px;
-		background-color: #d0021b;
+		background-color: $red;
 		cursor: pointer;
 	}
 
@@ -48,29 +57,38 @@
 	}
 }
 
-.personal-info {
-	display: flex;
-	justify-content: space-around;
-	margin-bottom: 30%;
-}
-
-.skills {
+.tech {
 	display: flex;
 	flex-direction: column;
 	margin-left: 10%;
 
-	&__title {
-		font-size: 30px;
-		font-weight: 900;
-		display: flex;
-		justify-content: center;
-		margin: 200px 0 90px 0;
+	&__section {
+		margin-top: 200px;
+		margin-left: 300px;
+		width: 310px;
+		height: 235px;
+		background-color: $red;
+		box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.5);
 	}
 
-	&__section {
+	&__skill-area {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 10%;
+	}
+
+	&__title {
+		font-size: 24px;
+		color: $white;
+		font-style: italic;
+		margin-bottom: 10px;
+	}
+
+	&__icons-section {
 		display: grid;
-		grid-template-columns: repeat(2, 55px);
-		grid-template-rows: repeat(4, 55px);
+		grid-template-columns: repeat(4, 55px);
+		grid-template-rows: repeat(2, 55px);
 		gap: 20px;
 	}
 

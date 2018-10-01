@@ -27,8 +27,20 @@ module.exports = function(grunt) {
 					ext: '.min.css'
 				}]
 			}
+		},
+
+		uglify: {
+			dist: {
+				options: {
+					sourceMap: true
+				},
+				files: {
+					'dest/all.min.js' : ['js/loadName.js', 'js/slider.js']
+				}
+			}
 		}
 	});
+	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks('grunt-contrib-sass');

@@ -1,9 +1,15 @@
+@import "../variables/variables.scss";
+
 .navigation {
 	text-align: right;
 	height: 70px;
 
+	a{
+		z-index: 1;
+	}
+
 	&--color {
-		background-color: #383838;
+		background-color: $black;
 	}
 
 	&--about{ 
@@ -11,14 +17,16 @@
 	}
 
 	&__menu {
+		position: relative;
 		text-align: center;
 		display: none;
-		background-color: #FFF;
+		background-color: $white;
 		margin: 0;
 		height: 226px;
+		margin-bottom: 100%;
 
 		&--color {
-			background-color: #383838;
+			background-color: $black;
 		}
 	}
 
@@ -30,27 +38,27 @@
 
 	&__link {
 		text-decoration: none;
-		background-color: #FFF;
-		color: #383838;
+		background-color: $white;
+		color: $black;
 		line-height: 50px;
 		font-size: 36px;
 		font-weight: 900;
 		font-style: normal;
 
 		&--color {
-			background-color: #383838;
-			color: #FFF;
+			background-color: $black;
+			color: $white;
 		}
 
 		&:hover {
-			color: #d0021b;
+			color: $red;
 		}
 	}
 
 	&__hamburger {
 		display: block;
 		cursor: pointer;
-		color: #FFF;
+		color: $white;
 		margin: 0 26px 0 0;
 		font-size: 26px;
 		line-height: 70px;
