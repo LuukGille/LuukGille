@@ -1,7 +1,8 @@
 @import "../variables/variables.scss";
 
 .navigation {
-	text-align: right;
+	display: flex;
+	justify-content: flex-end;
 	height: 70px;
 
 	a{
@@ -23,7 +24,8 @@
 		background-color: $white;
 		margin: 0;
 		height: 226px;
-		margin-bottom: 100%;
+		width: 100%;
+		overflow-y: hidden;
 
 		&--color {
 			background-color: $black;
@@ -55,16 +57,65 @@
 		}
 	}
 
+
 	&__hamburger {
-		display: block;
-		cursor: pointer;
-		color: $white;
-		margin: 0 26px 0 0;
-		font-size: 26px;
-		line-height: 70px;
-		width: 26px;
-		float: right;
+		position: absolute;
+		z-index: 999;
+		top: 40px;
+		right: 40px;
+		width: 70px;
+
+		&--small {
+			top: 10px;
+		}
 	}
+
+	&__hamburger .navigation__line {
+		width: 50px;
+		height: 5px;
+		display: block;
+		background-color: $white;
+		margin: 8px auto;
+		border-radius: 5px;
+		cursor: pointer;
+		transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-webkit-transition: all 0.3s ease-in-out;
+		-o-trasition: all 0.3s ease-in-out;
+	}
+
+	&__hamburger.is-active .navigation__line:nth-child(2){
+		opacity: 0;
+	}
+
+	&__hamburger.is-active .navigation__line:nth-child(1){
+		background-color: $black;
+		transform: translateY(13px) rotate(45deg);
+		-moz-transform: translateY(13px) rotate(45deg);
+		-webkit-transform: translateY(13px) rotate(45deg);
+		-o-transform: translateY(13px) rotate(45deg);
+	}
+
+	&__hamburger--color.is-active .navigation__line:nth-child(1) {
+		background-color: $white;
+	}
+
+	&__hamburger.is-active .navigation__line:nth-child(3){
+		background-color: $black;
+		transform: translateY(-13px) rotate(-45deg);
+		-moz-transform: translateY(-13px) rotate(-45deg);
+		-webkit-transform: translateY(-13px) rotate(-45deg);
+		-o-transform: translateY(-13px) rotate(-45deg);
+
+	}
+
+	&__hamburger--color.is-active .navigation__line:nth-child(3) {
+		background-color: $white;
+	}
+}
+
+body.navigation-is-active .intro-name--size {
+	display: none;
 }
 
 #toggle {

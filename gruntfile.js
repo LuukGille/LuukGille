@@ -35,7 +35,7 @@ module.exports = function(grunt) {
 					sourceMap: true
 				},
 				files: {
-					'dest/all.min.js' : ['js/loadName.js', 'js/slider.js']
+					'dest/all.min.js' : ['js/hamburger.js']
 				}
 			}
 		}
