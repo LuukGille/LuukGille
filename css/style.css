@@ -84,9 +84,9 @@ body, html {
 body.navigation-is-active .intro-name--size {
   display: none; }
 
-#toggle {
+.toggle {
   display: none; }
-  #toggle:checked + .navigation__menu {
+  .toggle:checked + .navigation__menu {
     display: block; }
 
 .main {
@@ -141,9 +141,9 @@ body.navigation-is-active .intro-name--size {
       font-size: 40px;
       text-decoration: none;
       color: #FFF; }
-  .title #toggle {
+  .title .toggle {
     display: none; }
-    .title #toggle:checked + .title__first-name--link {
+    .title .toggle:checked + .title__first-name--link {
       display: none; }
   .title__last-name {
     grid-column: 5 / 6;
