@@ -1,7 +1,7 @@
-let body = document.querySelector('body');
-let theButton = document.querySelector('.navigation__hamburger');
+const body = document.querySelector('body');
+const theButton = document.querySelector('.navigation__hamburger');
 
-theButton.onclick = () => {
+theButton.addEventListener('click', function() {
 	body.classList.toggle('navigation-is-active');
 	theButton.classList.toggle('is-active');
-};
+});
