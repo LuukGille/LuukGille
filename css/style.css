@@ -51,7 +51,7 @@ body, html {
     .navigation__hamburger--small {
       top: 10px; }
   .navigation__hamburger .navigation__line {
-    width: 50px;
+    width: 35px;
     height: 5px;
     display: block;
     background-color: #FFF;
@@ -202,7 +202,7 @@ body.navigation-is-active .intro-name--size {
     .gallery__grid--ftsf {
       background-image: url("../images/projects/login_image.jpg"); }
   .gallery__title {
-    font-size: 22px;
+    font-size: 20px;
     color: #FFF; }
   .gallery__text {
     color: #FFF;
@@ -352,7 +352,7 @@ body.navigation-is-active .intro-name--size {
     .profile__title--color {
       color: #d0021b; }
   .profile__discription {
-    font-size: 40px;
+    font-size: 34px;
     font-weight: 900; }
     .profile__discription--color {
       color: #d0021b; }
