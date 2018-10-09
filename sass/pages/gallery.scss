@@ -3,7 +3,11 @@
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(3, 1fr);
 	grid-gap: 20px;
-	padding: 40px; 
+	padding: 40px;
+
+	@media screen and (max-width: 992px){
+		grid-template-columns: repeat(1, 1fr);
+	}
 	
 	&__grid {
 		display: flex;
@@ -28,7 +32,11 @@
 
 	&__title {
 		font-size: 20px;
-		color: $white
+		color: $white;
+
+		@media screen and (max-width: 992px){
+			font-size: 19px;
+		}
 	}
 
 	&__text {

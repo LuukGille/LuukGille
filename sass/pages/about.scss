@@ -10,6 +10,10 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 
+	@media screen and (max-width: 992px) {
+		height: 70%;
+	}
+
 	&__text {
 		text-align: right;
 		width: 621px;
@@ -22,14 +26,27 @@
 		font-style: italic;
 		margin-bottom: 15px;
 
+		@media screen and (max-width: 992px) {
+			font-size: 30px;
+		}
+
 		&--color {
 			color: $red;
+
+			@media screen and (max-width: 992px){
+				display: flex;
+				justify-content: flex-end;
+			}
 		}
 	}
 
 	&__discription {
 		font-size: 34px;
 		font-weight: 900;
+
+		@media screen and (max-width: 992px){
+			font-size: 20px;
+		}
 
 		&--color {
 			color: $red;
@@ -41,12 +58,22 @@
 	height: 445px;
 	width: 631px;
 
+	@media screen and (max-width: 992px) {
+		width: 80%;
+		height: 100%; 
+		align-self: center; 
+	}
+
 	&__title {
 		font-size: 30px;
 		font-weight: 900;
 		display: flex;
 		justify-content: center;
 		margin: 200px 0 50px 0;
+
+		@media screen and (max-width: 992px) {
+			margin: 100px 0 20px 0;
+		}
 	}
 
 	&__text {
@@ -62,4 +89,44 @@
 	display: flex;
 	justify-content: space-around;
 	margin-bottom: 30%;
+
+	@media screen and (max-width: 992px) {
+		flex-direction: column-reverse;
+	}
 }
+
+.skills {
+	display: flex;
+	flex-direction: column;
+	margin-left: 10%;
+
+	@media screen and (max-width: 992px){
+		align-self: center;
+		margin-left: 0;
+	}
+
+	&__title {
+		font-size: 30px;
+		font-weight: 900;
+		display: flex;
+		justify-content: center;
+		margin: 200px 0 90px 0;
+
+		@media screen and (max-width: 992px){
+			margin: 20px 0 50px 0;
+		}
+	}
+
+	&__section {
+		display: grid;
+		grid-template-columns: repeat(2, 55px);
+		grid-template-rows: repeat(4, 55px);
+		gap: 20px;
+	}
+
+	&__icons {
+		height: 55px;
+		width: 55px;
+	}
+}
+

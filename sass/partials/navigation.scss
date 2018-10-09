@@ -29,12 +29,20 @@
 		&--color {
 			background-color: $black;
 		}
+
+		@media screen and (max-width: 992px){
+			padding-inline-start: 0;
+		}	
 	}
 
 	&__border {
 		display: flex;
 		flex-direction: column;
-		padding-top: 3%
+		padding-top: 3%;
+
+		@media screen and (max-width: 992px){
+			padding-top: 10%;
+		}
 	}
 
 	&__link {
@@ -65,6 +73,11 @@
 		width: 70px;
 
 		&--small {
+			top: 10px;
+		}
+
+		@media screen and (max-width: 992px){
+			right: 5px;
 			top: 10px;
 		}
 	}
