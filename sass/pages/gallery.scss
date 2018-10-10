@@ -28,6 +28,10 @@
 		&--ftsf {
 			background-image: url("../images/projects/login_image.jpg");
 		}
+
+		&--odsa {
+			background-image: url("../images/projects/apartment.jpg");
+		}
 	}
 
 	&__title {
@@ -43,6 +47,7 @@
 		color: $white;
 		font-style: italic;
 		margin-top: -1rem; 
+		font-size: 15px;
 	}
 
 	&__project {
@@ -53,7 +58,7 @@
 		line-height: 1px;
 		width: 100%;
 		height: 200px;
-		background-color: $red;
+		background-color: $white;
 		cursor: pointer;
 	}
 

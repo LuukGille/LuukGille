@@ -18,6 +18,10 @@
 	&--ftsf {
 		background-image: url("../images/projects/login_image.jpg");
 	}
+
+	&--odsa {
+		background-image: url("../images/projects/apartment.jpg");
+	}
 }
 
 .project-info {
@@ -55,7 +59,7 @@
 	}
 
 	&__subtitle {
-		font-size: 25px;
+		font-size: 22px;
 		font-weight: 500;
 		display: flex;
 		justify-content: center;
@@ -64,7 +68,7 @@
 		font-style: italic;
 
 		@media screen and (max-width: 992px) {
-			font-size: 22px;
+			font-size: 16px;
 		}
 	}
 
@@ -98,7 +102,9 @@
 			background-image: url("../images/projects/codepamoja-banner.jpg");
 		}
 
-
+		&--odsa {
+			background-image: url("../images/projects/highRise.jpg");
+		}
 	}
 }
 
