@@ -111,6 +111,9 @@ body.navigation-is-active .intro-name--size {
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -1; }
+  @media screen and (max-width: 992px) {
+    .background-image {
+      background-position: left 27% top; } }
   .background-image__top {
     background-image: url("../images/home.png");
     clip-path: polygon(0 0, 100% 0, 100% 20%, 0 85%); }
@@ -370,7 +373,8 @@ body.navigation-is-active .intro-name--size {
     @media screen and (max-width: 992px) {
       .project__image {
         margin-top: 0;
-        clip-path: polygon(0 0, 100% 0, 100% 25%, 0 50%); } }
+        clip-path: polygon(0 0, 100% 0, 100% 25%, 0 50%);
+        background-position: left 55% top 75%; } }
     .project__image--millman {
       background-image: url("../images/projects/fts-banner.jpg"); }
     .project__image--ftsf {
@@ -456,7 +460,8 @@ body.navigation-is-active .intro-name--size {
   background-size: cover; }
   @media screen and (max-width: 992px) {
     .profile {
-      height: 70%; } }
+      height: 70%;
+      background-position: left 27% top; } }
   .profile__text {
     text-align: right;
     width: 621px;

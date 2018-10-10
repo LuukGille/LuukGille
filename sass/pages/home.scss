@@ -12,6 +12,10 @@
 	background-size: cover;
 	z-index: -1;
 
+	@media screen and (max-width: 992px) {
+		background-position: left 27% top;
+	}
+
 	&__top {
 		background-image: url("../images/home.png");
 		clip-path: polygon(0 0,100% 0,100% 20%,0 85%);
