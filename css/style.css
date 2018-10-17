@@ -116,16 +116,28 @@ body.navigation-is-active .intro-name--size {
       background-position: left 27% top; } }
   .background-image__top {
     background-image: url("../images/home.png");
-    clip-path: polygon(0 0, 100% 0, 100% 20%, 0 85%); }
+    clip-path: polygon(0 0, 100% 0, 100% 20%, 0 85%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 20%, 0 85%);
+    -moz-clip-path: polygon(0 0, 100% 0, 100% 20%, 0 85%);
+    -o-clip-path: polygon(0 0, 100% 0, 100% 20%, 0 85%); }
     @media screen and (max-width: 992px) {
       .background-image__top {
-        clip-path: polygon(0 0, 100% 0, 100% 40%, 0 60%); } }
+        clip-path: polygon(0 0, 100% 0, 100% 40%, 0 60%);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 40%, 0 60%);
+        -moz-clip-path: polygon(0 0, 100% 0, 100% 40%, 0 60%);
+        -o-clip-path: polygon(0 0, 100% 0, 100% 40%, 0 60%); } }
   .background-image__bottom {
     background-image: url("../images/PCpicture.png");
-    clip-path: polygon(135% 0, 100% 0, 100% 100%, -18% 100%); }
+    clip-path: polygon(135% 0, 100% 0, 100% 100%, -18% 100%);
+    -webkit-clip-path: polygon(135% 0, 100% 0, 100% 100%, -18% 100%);
+    -moz-clip-path: polygon(135% 0, 100% 0, 100% 100%, -18% 100%);
+    -o-clip-path: polygon(135% 0, 100% 0, 100% 100%, -18% 100%); }
     @media screen and (max-width: 992px) {
       .background-image__bottom {
-        clip-path: polygon(305% 0, 100% 0, 100% 100%, -187% 100%); } }
+        clip-path: polygon(305% 0, 100% 0, 100% 100%, -187% 100%);
+        -webkit-clip-path: polygon(305% 0, 100% 0, 100% 100%, -187% 100%);
+        -moz-clip-path: polygon(305% 0, 100% 0, 100% 100%, -187% 100%);
+        -o-clip-path: polygon(305% 0, 100% 0, 100% 100%, -187% 100%); } }
 
 .intro-name {
   display: grid;
@@ -328,7 +340,7 @@ body.navigation-is-active .intro-name--size {
 
 .project-info {
   display: flex;
-  margin-bottom: 20%; }
+  margin-bottom: 10%; }
   @media screen and (max-width: 992px) {
     .project-info {
       flex-direction: column; } }
@@ -340,19 +352,20 @@ body.navigation-is-active .intro-name--size {
   @media screen and (max-width: 992px) {
     .project {
       width: 80%;
-      height: 100%;
+      max-height: 600px;
+      height: 600px;
       align-self: center; } }
   .project__title {
     font-size: 29px;
     font-weight: 900;
     display: flex;
     justify-content: center;
-    margin-top: 220px;
+    margin-top: 140px;
     color: #d0021b; }
     @media screen and (max-width: 992px) {
       .project__title {
         font-size: 24px;
-        margin-top: 100px; } }
+        margin-top: 35px; } }
   .project__subtitle {
     font-size: 22px;
     font-weight: 500;
@@ -371,14 +384,20 @@ body.navigation-is-active .intro-name--size {
   .project__image {
     width: 100%;
     height: 573px;
-    margin-top: 200px;
+    margin-top: 120px;
     display: flex;
     background-image: url("../images/mountain1.jpg");
-    clip-path: polygon(0 0, 100% 0, 100% 34%, 0 100%); }
+    clip-path: polygon(0 0, 100% 0, 100% 34%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 34%, 0 100%);
+    -moz-clip-path: polygon(0 0, 100% 0, 100% 34%, 0 100%);
+    -o-clip-path: polygon(0 0, 100% 0, 100% 34%, 0 100%); }
     @media screen and (max-width: 992px) {
       .project__image {
         margin-top: 0;
         clip-path: polygon(0 0, 100% 0, 100% 25%, 0 50%);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 25%, 0 50%);
+        -moz-clip-path: polygon(0 0, 100% 0, 100% 25%, 0 50%);
+        -o-clip-path: polygon(0 0, 100% 0, 100% 25%, 0 50%);
         background-position: left 55% top 75%; } }
     .project__image--millman {
       background-image: url("../images/projects/fts-banner.jpg"); }
@@ -406,11 +425,15 @@ body.navigation-is-active .intro-name--size {
     @media screen and (max-width: 800px) {
       .tech__section {
         left: 15%;
-        top: 155%; } }
+        top: 177%; } }
     @media screen and (max-width: 420px) {
       .tech__section {
         left: 13%;
         top: 200%; } }
+    @media screen and (max-width: 420px) and (max-height: 750px) {
+      .tech__section {
+        left: 13%;
+        top: 215%; } }
     @media screen and (max-width: 376px) {
       .tech__section {
         left: 13%;
@@ -432,7 +455,7 @@ body.navigation-is-active .intro-name--size {
     @media screen and (max-width: 320px) {
       .tech__section {
         left: 6%;
-        top: 265%;
+        top: 255%;
         width: 280px;
         height: 214px; } }
   .tech__skill-area {
@@ -453,6 +476,27 @@ body.navigation-is-active .intro-name--size {
   .tech__icons {
     height: 55px;
     width: 55px; }
+
+.return {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 232px;
+  margin-bottom: 64px;
+  text-decoration: none;
+  cursor: pointer; }
+  .return__text {
+    font-weight: bold;
+    color: #383838;
+    width: 100px;
+    margin-right: 45px; }
+  .return__icon {
+    background-image: url("../images/SVG/Arrow_return.png");
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    height: 40px;
+    width: 17%;
+    margin-top: 7px;
+    margin-right: 10px; }
 
 .profile {
   display: flex;
@@ -496,6 +540,23 @@ body.navigation-is-active .intro-name--size {
     .profile__discription--color {
       color: #d0021b; }
 
+.know-more {
+  margin: 0 auto;
+  width: 114px;
+  margin-top: 22px;
+  cursor: pointer; }
+  .know-more__text {
+    font-weight: bold;
+    color: #000;
+    border-bottom: 2px solid #000; }
+  .know-more__icon {
+    background-image: url("../images/SVG/Arrow.png");
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    margin-top: 7px;
+    height: 40px;
+    width: 17%; }
+
 .about-me {
   height: 445px;
   width: 631px; }
@@ -509,7 +570,7 @@ body.navigation-is-active .intro-name--size {
     font-weight: 900;
     display: flex;
     justify-content: center;
-    margin: 200px 0 50px 0; }
+    margin: 120px 0 50px 0; }
     @media screen and (max-width: 992px) {
       .about-me__title {
         margin: 100px 0 20px 0; } }
@@ -539,7 +600,7 @@ body.navigation-is-active .intro-name--size {
     font-weight: 900;
     display: flex;
     justify-content: center;
-    margin: 200px 0 90px 0; }
+    margin: 120px 0 90px 0; }
     @media screen and (max-width: 992px) {
       .skills__title {
         margin: 20px 0 50px 0; } }

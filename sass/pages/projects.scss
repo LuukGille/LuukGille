@@ -26,7 +26,7 @@
 
 .project-info {
 	display: flex;
-	margin-bottom: 20%;
+	margin-bottom: 10%;
 
 	@media screen and (max-width: 992px) {
 		flex-direction: column;
@@ -40,7 +40,8 @@
 
 	@media screen and (max-width: 992px) {
 		width: 80%;
-		height: 100%; 
+		max-height: 600px;
+		height: 600px;
 		align-self: center; 
 	}
 
@@ -49,12 +50,12 @@
 		font-weight: 900;
 		display: flex;
 		justify-content: center;
-		margin-top: 220px;
+		margin-top: 140px;
 		color: $red;
 
 		@media screen and (max-width: 992px) {
 			font-size: 24px;
-			margin-top: 100px;
+			margin-top: 35px;
 		}
 	}
 
@@ -83,14 +84,20 @@
 	&__image {
 		width: 100%;
 		height: 573px;
-		margin-top: 200px;
+		margin-top: 120px;
 		display: flex;
 		background-image: url("../images/mountain1.jpg");
 		clip-path: polygon(0 0,100% 0,100% 34%,0 100%);
+		-webkit-clip-path: polygon(0 0,100% 0,100% 34%,0 100%);
+		-moz-clip-path: polygon(0 0,100% 0,100% 34%,0 100%);
+		-o-clip-path: polygon(0 0,100% 0,100% 34%,0 100%);
 
 		@media screen and (max-width: 992px) {
 			margin-top: 0;
 			clip-path: polygon(0 0,100% 0,100% 25%,0 50%);
+			-webkit-clip-path: polygon(0 0,100% 0,100% 25%,0 50%);
+			-moz-clip-path: polygon(0 0,100% 0,100% 25%,0 50%);
+			-o-clip-path: polygon(0 0,100% 0,100% 25%,0 50%);
 			background-position: left 55% top 75%;
 		}
 
@@ -129,12 +136,19 @@
 
 		@media screen and (max-width: 800px) {
 			left: 15%;
-			top: 155%;
+			top: 177%;
 		}
 
 		@media screen and (max-width: 420px) {
 			left: 13%;
 			top: 200%;
+		}
+
+		@media screen
+		and (max-width: 420px)
+		and (max-height: 750px) {
+			left: 13%;
+			top: 215%;
 		}
 	
 		@media screen and (max-width: 376px) {
@@ -162,7 +176,7 @@
 
 		@media screen and (max-width: 320px) {
 			left: 6%;
-			top: 265%;
+			top: 255%;
 			width: 280px;
 			height: 214px;
 		}
@@ -194,3 +208,30 @@
 		width: 55px;
 	}
 }
+
+.return {
+	display: flex;
+	flex-direction: row-reverse;
+	width: 232px;
+	margin-bottom: 64px;
+	text-decoration: none;
+	cursor: pointer;
+
+	&__text {
+		font-weight: bold;
+		color: $black;
+		width: 100px;
+		margin-right: 45px;
+	}
+
+	&__icon {
+		background-image: url("../images/SVG/Arrow_return.png");
+		background-repeat: no-repeat;
+		margin: 0 auto;
+		height: 40px;
+		width: 17%;
+		margin-top: 7px;
+		margin-right: 10px;
+	}
+}
+

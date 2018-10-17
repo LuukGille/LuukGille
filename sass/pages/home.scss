@@ -19,18 +19,30 @@
 	&__top {
 		background-image: url("../images/home.png");
 		clip-path: polygon(0 0,100% 0,100% 20%,0 85%);
+		-webkit-clip-path: polygon(0 0,100% 0,100% 20%,0 85%);
+		-moz-clip-path: polygon(0 0,100% 0,100% 20%,0 85%);
+		-o-clip-path: polygon(0 0,100% 0,100% 20%,0 85%);
 
 		@media screen and (max-width: 992px) {
 			clip-path: polygon(0 0,100% 0,100% 40%,0 60%);
+			-webkit-clip-path: polygon(0 0,100% 0,100% 40%,0 60%);
+			-moz-clip-path: polygon(0 0,100% 0,100% 40%,0 60%);
+			-o-clip-path: polygon(0 0,100% 0,100% 40%,0 60%);
 		}
 	}
 	
 	&__bottom {
 		background-image: url("../images/PCpicture.png");
 		clip-path: polygon(135% 0,100% 0,100% 100%,-18% 100%);
+		-webkit-clip-path: polygon(135% 0,100% 0,100% 100%,-18% 100%);
+		-moz-clip-path: polygon(135% 0,100% 0,100% 100%,-18% 100%);
+		-o-clip-path: polygon(135% 0,100% 0,100% 100%,-18% 100%);
 
 		@media screen and (max-width: 992px) {
 			clip-path: polygon(305% 0,100% 0,100% 100%,-187% 100%);
+			-webkit-clip-path: polygon(305% 0,100% 0,100% 100%,-187% 100%);
+			-moz-clip-path: polygon(305% 0,100% 0,100% 100%,-187% 100%);
+			-o-clip-path: polygon(305% 0,100% 0,100% 100%,-187% 100%);
 		}
 	}
 }

@@ -55,6 +55,28 @@
 	}
 }
 
+.know-more { 
+	margin: 0 auto;
+	width: 114px;
+	margin-top: 22px;
+	cursor: pointer;
+
+	&__text {
+		font-weight: bold;
+		color: $black-darker;
+		border-bottom: 2px solid $black-darker;
+	}
+
+	&__icon {
+		background-image: url("../images/SVG/Arrow.png");
+		background-repeat: no-repeat;
+		margin: 0 auto;
+		margin-top: 7px;
+		height: 40px;
+		width: 17%;
+	}
+}
+
 .about-me {
 	height: 445px;
 	width: 631px;
@@ -70,7 +92,7 @@
 		font-weight: 900;
 		display: flex;
 		justify-content: center;
-		margin: 200px 0 50px 0;
+		margin: 120px 0 50px 0;
 
 		@media screen and (max-width: 992px) {
 			margin: 100px 0 20px 0;
@@ -111,7 +133,7 @@
 		font-weight: 900;
 		display: flex;
 		justify-content: center;
-		margin: 200px 0 90px 0;
+		margin: 120px 0 90px 0;
 
 		@media screen and (max-width: 992px){
 			margin: 20px 0 50px 0;
