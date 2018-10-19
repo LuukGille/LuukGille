@@ -343,7 +343,8 @@ body.navigation-is-active .intro-name--size {
   margin-bottom: 10%; }
   @media screen and (max-width: 992px) {
     .project-info {
-      flex-direction: column; } }
+      flex-direction: column;
+      margin-bottom: 0; } }
 
 .project {
   height: 400px;
@@ -477,10 +478,40 @@ body.navigation-is-active .intro-name--size {
     height: 55px;
     width: 55px; }
 
+.link {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 90px;
+  margin-right: 20%; }
+  .link__text {
+    font-weight: bold;
+    color: #383838;
+    width: 121px;
+    margin-top: 8px;
+    border-bottom: 2px solid #000; }
+  .link__icon {
+    display: flex;
+    height: 50px;
+    width: 115px;
+    margin-left: 5px;
+    background-repeat: no-repeat;
+    cursor: pointer; }
+    .link__icon--linkedin {
+      background-image: url("../images/SVG/link.svg"); }
+      .link__icon--linkedin:hover {
+        background-image: url("../images/SVG/linkHover.svg"); }
+    .link__icon--github {
+      background-image: url("../images/SVG/Github.svg"); }
+      .link__icon--github:hover {
+        background-image: url("../images/SVG/GithubPopup.svg"); }
+
 .return {
   display: flex;
   flex-direction: row-reverse;
   width: 232px;
+  margin-top: 25px;
   margin-bottom: 64px;
   text-decoration: none;
   cursor: pointer; }
@@ -497,6 +528,15 @@ body.navigation-is-active .intro-name--size {
     width: 17%;
     margin-top: 7px;
     margin-right: 10px; }
+
+.footer {
+  display: inline-flex;
+  flex-direction: row-reverse;
+  width: 100%; }
+  @media screen and (max-width: 995px) {
+    .footer {
+      display: block;
+      flex-direction: none; } }
 
 .profile {
   display: flex;
