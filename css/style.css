@@ -622,7 +622,7 @@ body.navigation-is-active .intro-name--size {
 .personal-info {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 30%; }
+  margin-bottom: 10%; }
   @media screen and (max-width: 992px) {
     .personal-info {
       flex-direction: column-reverse; } }
