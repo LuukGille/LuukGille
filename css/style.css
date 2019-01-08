@@ -126,6 +126,138 @@ body.navigation-is-active .intro-name--size {
   display: block;
 }
 
+.link-section {
+  display: flex;
+  position: absolute;
+  justify-content: flex-end;
+  z-index: 1;
+  width: 100%;
+  height: 50%;
+  top: 60%;
+}
+
+.moon-sidebar {
+  margin-top: -165px;
+  overflow: hidden;
+  overflow-x: hidden;
+}
+@media only screen and (max-width: 640px) {
+  .moon-sidebar {
+    margin-top: -80px;
+  }
+}
+.moon-sidebar__section {
+  display: table;
+  margin: 100px;
+  height: 303px;
+  width: 365px;
+  background-color: #383838;
+  transition-duration: 1s;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  margin-left: 160px;
+  margin-bottom: 39px;
+  margin-right: -250px;
+}
+@media only screen and (max-width: 640px) {
+  .moon-sidebar__section {
+    height: 226px;
+    width: 250px;
+    margin-left: 160px;
+    margin-right: -130px;
+  }
+}
+.moon-sidebar__section:hover {
+  transform: scale(1.4);
+  transition-duration: 1s;
+  overflow-x: hidden;
+}
+.moon-sidebar__icon {
+  display: flex;
+  flex-direction: column;
+  height: 140px;
+  width: 50px;
+  margin-left: 27px;
+  margin-top: 84px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+@media only screen and (max-width: 640px) {
+  .moon-sidebar__icon {
+    margin-left: 26px;
+    margin-top: 45px;
+  }
+}
+.moon-sidebar__icon--linkedin {
+  transform: rotate(270deg);
+  width: 50px;
+  margin-top: 0;
+  background-image: url("../images/SVG/linkedin-4.svg");
+}
+.moon-sidebar__icon--linkedin:hover {
+  background-image: url("../images/SVG/linkedinHover.svg");
+}
+.moon-sidebar__icon--github {
+  transform: rotate(270deg);
+  width: 50px;
+  margin-top: 0;
+  background-image: url("../images/SVG/GithubWhite.svg");
+}
+.moon-sidebar__icon--github:hover {
+  background-image: url("../images/SVG/GithubPopup.svg");
+}
+
+.moon-bottomline {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 100%;
+  height: 180px;
+  overflow: hidden;
+  overflow-x: hidden;
+}
+.moon-bottomline__section {
+  display: table;
+  height: 303px;
+  width: 365px;
+  background-color: #383838;
+  border-radius: 50% 50% 0 0;
+  transition-duration: 1s;
+  margin-top: 80px;
+}
+@media only screen and (max-width: 640px) {
+  .moon-bottomline__section {
+    height: 226px;
+    width: 250px;
+  }
+}
+.moon-bottomline__section:hover {
+  transform: scale(1.4);
+  transition-duration: 1s;
+  overflow-x: hidden;
+}
+.moon-bottomline__icon {
+  display: flex;
+  height: 50px;
+  width: 115px;
+  margin: 0 auto;
+  margin-top: 15px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.moon-bottomline__icon--linkedin {
+  background-image: url("../images/SVG/linkedin-4.svg");
+}
+.moon-bottomline__icon--linkedin:hover {
+  background-image: url("../images/SVG/linkedinHover.svg");
+}
+.moon-bottomline__icon--github {
+  background-image: url("../images/SVG/GithubWhite.svg");
+}
+.moon-bottomline__icon--github:hover {
+  background-image: url("../images/SVG/GithubPopup.svg");
+}
+
 .main {
   overflow-y: hidden;
 }
@@ -183,12 +315,12 @@ body.navigation-is-active .intro-name--size {
 }
 @media screen and (max-width: 1024px) {
   .intro-name {
-    margin-top: 45%;
+    margin-top: 20%;
   }
 }
 @media screen and (max-width: 750px) {
   .intro-name {
-    margin-top: 66%;
+    margin-top: 30%;
   }
 }
 @media screen and (max-width: 420px) and (max-height: 800px) {
@@ -348,68 +480,6 @@ body.navigation-is-active .intro-name--size {
   }
 }
 
-.link-section {
-  display: flex;
-  position: absolute;
-  justify-content: flex-end;
-  z-index: 1;
-  width: 100%;
-  height: 50%;
-  top: 460px;
-}
-
-.moon-sidebar {
-  margin-top: -219px;
-  overflow: hidden;
-  overflow-x: hidden;
-}
-.moon-sidebar__section {
-  display: table;
-  margin: 100px;
-  height: 420px;
-  width: 500px;
-  background-color: #383838;
-  transition-duration: 1s;
-  border-top-left-radius: 50%;
-  border-bottom-left-radius: 50%;
-  margin-left: 160px;
-  margin-bottom: 39px;
-  margin-right: -400px;
-}
-.moon-sidebar__section:hover {
-  transform: scale(1.4);
-  transition-duration: 1s;
-  overflow-x: hidden;
-}
-.moon-sidebar__icon {
-  display: flex;
-  flex-direction: column;
-  height: 120px;
-  width: 50px;
-  margin-left: 20px;
-  margin-top: 150px;
-  background-repeat: no-repeat;
-  cursor: pointer;
-}
-.moon-sidebar__icon--linkedin {
-  transform: rotate(270deg);
-  width: 50px;
-  margin-top: 0;
-  background-image: url("../images/SVG/linkedin-4.svg");
-}
-.moon-sidebar__icon--linkedin:hover {
-  background-image: url("../images/SVG/linkedinHover.svg");
-}
-.moon-sidebar__icon--github {
-  transform: rotate(270deg);
-  width: 50px;
-  margin-top: 0;
-  background-image: url("../images/SVG/GithubWhite.svg");
-}
-.moon-sidebar__icon--github:hover {
-  background-image: url("../images/SVG/GithubPopup.svg");
-}
-
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -468,13 +538,13 @@ body.navigation-is-active .intro-name--size {
   height: 200px;
   background-color: #FFF;
   cursor: pointer;
-  z-index: 2;
 }
 .gallery__link {
   position: absolute;
   width: 30%;
   height: 30%;
   text-decoration: none;
+  z-index: 2;
 }
 
 .slider {
@@ -905,51 +975,6 @@ body.navigation-is-active .intro-name--size {
 .skills__icons {
   height: 55px;
   width: 55px;
-}
-
-.moon-link {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  max-width: 100%;
-  height: 180px;
-  overflow: hidden;
-  overflow-x: hidden;
-}
-.moon-link__section {
-  display: table;
-  height: 330px;
-  width: 360px;
-  background-color: #383838;
-  border-radius: 50% 50% 0 0;
-  transition-duration: 1s;
-  margin-top: 80px;
-}
-.moon-link__section:hover {
-  transform: scale(1.4);
-  transition-duration: 1s;
-  overflow-x: hidden;
-}
-.moon-link__icon {
-  display: flex;
-  height: 50px;
-  width: 115px;
-  margin: 0 auto;
-  margin-top: 15px;
-  background-repeat: no-repeat;
-  cursor: pointer;
-}
-.moon-link__icon--linkedin {
-  background-image: url("../images/SVG/linkedin-4.svg");
-}
-.moon-link__icon--linkedin:hover {
-  background-image: url("../images/SVG/linkedinHover.svg");
-}
-.moon-link__icon--github {
-  background-image: url("../images/SVG/GithubWhite.svg");
-}
-.moon-link__icon--github:hover {
-  background-image: url("../images/SVG/GithubPopup.svg");
 }
 
 /*# sourceMappingURL=style.css.map */

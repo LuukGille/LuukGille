@@ -1,0 +1,141 @@
+.link-section {
+	display: flex;
+	position: absolute;
+	justify-content: flex-end;
+	z-index: 1;
+	width: 100%;
+	height: 50%;
+	top: 60%;
+}
+
+.moon-sidebar {
+	margin-top: -165px;
+	overflow: hidden;
+	overflow-x: hidden;
+
+	@media only screen and (max-width: 640px) {
+		margin-top: -80px;
+	}
+
+	&__section {
+		display: table;
+		margin: 100px;
+		height: 303px;
+		width: 365px;
+		background-color: $black;
+		transition-duration: 1s;
+		border-top-left-radius: 50%;
+		border-bottom-left-radius: 50%;
+		margin-left: 160px;
+		margin-bottom: 39px;
+		margin-right: -250px;
+
+		@media only screen and (max-width: 640px) {
+			height: 226px;
+			width: 250px;
+			margin-left: 160px;
+			margin-right: -130px;
+		}
+
+		&:hover {
+			transform: scale(1.4);
+			transition-duration: 1s;
+			overflow-x: hidden;
+		}
+	}
+
+	&__icon {
+		display: flex;
+		flex-direction: column;
+		height: 140px;
+		width: 50px;
+		margin-left: 27px;
+		margin-top: 84px;
+		background-repeat: no-repeat;
+		cursor: pointer;
+
+		@media only screen and (max-width: 640px) {
+			margin-left: 26px;
+			margin-top: 45px;
+		}
+
+		&--linkedin {
+			transform: rotate(270deg);
+			width: 50px;
+			margin-top: 0;
+			background-image: url("../images/SVG/linkedin-4.svg");
+
+			&:hover {
+				background-image: url("../images/SVG/linkedinHover.svg");
+			}
+		}
+
+		&--github {
+			transform: rotate(270deg);
+			width: 50px;
+			margin-top: 0;
+			background-image: url("../images/SVG/GithubWhite.svg");
+
+			&:hover {
+				background-image: url("../images/SVG/GithubPopup.svg");
+			}
+		}
+	}
+}
+
+.moon-bottomline {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	max-width: 100%;
+	height: 180px;
+	overflow: hidden;
+	overflow-x: hidden;
+
+	&__section {
+		display: table;
+		height: 303px;
+		width: 365px;
+		background-color: $black;
+		border-radius: 50% 50% 0 0;
+		transition-duration: 1s;
+		margin-top: 80px;
+
+		@media only screen and (max-width: 640px) {
+			height: 226px;
+			width: 250px;
+		}
+
+		&:hover {
+			transform: scale(1.4);
+			transition-duration: 1s;
+			overflow-x: hidden;
+		}
+	}
+
+	&__icon {
+		display: flex;
+		height: 50px;
+		width: 115px;
+		margin: 0 auto;
+		margin-top: 15px;
+		background-repeat: no-repeat;
+		cursor: pointer;
+
+		&--linkedin {
+			background-image: url("../images/SVG/linkedin-4.svg");
+
+			&:hover {
+				background-image: url("../images/SVG/linkedinHover.svg");
+			}
+		}
+
+		&--github {
+			background-image: url("../images/SVG/GithubWhite.svg");
+
+			&:hover {
+				background-image: url("../images/SVG/GithubPopup.svg");
+			}
+		}
+	}
+}
