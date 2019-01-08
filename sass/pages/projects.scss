@@ -217,6 +217,7 @@
 	width: 100%;
 	height: 90px;
 	margin-right: 20%;
+	z-index: 2;
 
 	&__text {
 		font-weight: bold;
@@ -250,6 +251,11 @@
 			}
 		}
 	}
+}
+
+.back-button {
+	position: relative;
+	z-index: 2;
 }
 
 .return {
