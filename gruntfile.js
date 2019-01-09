@@ -3,6 +3,10 @@ module.exports = function(grunt) {
 		pkg: grunt.file.readJSON('package.json'),
 
 		watch: {
+			js: {
+				files: ['js/*.js'],
+				tasks: ['uglify'],
+			},
 			sass: {
 				files: ['sass/*scss'],
 				tasks: ['sass', 'cssmin'],
@@ -35,7 +39,7 @@ module.exports = function(grunt) {
 					sourceMap: true
 				},
 				files: {
-					'dest/all.min.js' : ['js/hamburger.js', 'js/scroll.js']
+					'dest/all.min.js' : ['js/hamburger.js', 'js/scroll.js', 'js/fade.js']
 				}
 			}
 		}

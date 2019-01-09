@@ -10,6 +10,10 @@
 
 	&--color {
 		background-color: $black;
+		position: fixed;
+		width: 100%;
+		height: 70px;
+		z-index: 5;
 	}
 
 	&__menu {
@@ -22,7 +26,13 @@
 		width: 100%;
 		overflow-y: hidden;
 		z-index: 3;
+		animation: nav 1s;
 
+		@keyframes nav {
+			from {bottom: 20vw;}
+			to {bottom: 0px;}
+		}
+		
 		&--color {
 			background-color: $black;
 		}
@@ -130,6 +140,7 @@ body.navigation-is-active .intro-name--size {
 
 .toggle {
 	display: none;
+
 	&:checked {
 
 		+ .navigation__menu {

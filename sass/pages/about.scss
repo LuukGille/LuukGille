@@ -2,17 +2,16 @@
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-	height: 80vh;
-	margin-top: 20px;
+	height: 88vh;
 	margin: 0;
 	background-image: url("../images/about-me.png");
-	background-position: 0 50px;
+	background-position: 0 110px;
 	background-repeat: no-repeat;
 	background-size: cover;
 
 	@media screen and (max-width: 992px) {
-		height: 70%;
-		background-position: left 27% top;
+		height: 87%;
+		background-position: right 75% top 110px;
 	}
 
 	&__text {
