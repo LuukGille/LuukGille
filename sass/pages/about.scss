@@ -1,0 +1,65 @@
+.profile {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	height: 669px;
+	margin-top: 20px;
+	margin: 0;
+	background-image: url("../images/about-me.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	&__text {
+		text-align: right;
+		width: 621px;
+		margin-right: 10%;
+	}
+
+	&__title {
+		font-size: 48px;
+		font-weight: 900;
+		font-style: italic;
+		margin-bottom: 15px;
+
+		&--color {
+			color: $red;
+		}
+	}
+
+	&__discription {
+		font-size: 40px;
+		font-weight: 900;
+
+		&--color {
+			color: $red;
+		}
+	}
+}
+
+.about-me {
+	height: 445px;
+	width: 631px;
+
+	&__title {
+		font-size: 30px;
+		font-weight: 900;
+		display: flex;
+		justify-content: center;
+		margin: 200px 0 50px 0;
+	}
+
+	&__text {
+		text-align: justify;
+	}
+
+	&__paragraph {
+		margin: 10px;
+	}
+}
+
+.personal-info {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 30%;
+}

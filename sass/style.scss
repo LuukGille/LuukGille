@@ -1,0 +1,13 @@
+body, html {
+	height: 100%;
+	margin: 0;
+	font-family: 'Montserrat';
+	color: #383838;
+}
+
+@import "partials/navigation.scss";
+@import "pages/home.scss";
+@import "pages/gallery.scss";
+@import "pages/projects.scss";
+@import "pages/about.scss";
+@import "variables/variables.scss";

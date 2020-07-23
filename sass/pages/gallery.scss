@@ -1,0 +1,58 @@
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	grid-gap: 20px;
+	padding: 40px; 
+	
+	&__grid {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		height: 100%;
+		width: 100%;
+		background-image: url("../images/mountain2.jpg"); 
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+
+		&--millman {
+			background-image: url("../images/projects/fts-banner.jpg");
+		}
+
+		&--ftsf {
+			background-image: url("../images/projects/login_image.jpg");
+		}
+	}
+
+	&__title {
+		font-size: 22px;
+		color: $white
+	}
+
+	&__text {
+		color: $white;
+		font-style: italic;
+		margin-top: -1rem; 
+	}
+
+	&__project {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		line-height: 1px;
+		width: 100%;
+		height: 200px;
+		background-color: $red;
+		cursor: pointer;
+	}
+
+	&__link {
+		position: absolute;
+		width: 30%;
+		height: 30%;
+		text-decoration: none;
+	}
+}
